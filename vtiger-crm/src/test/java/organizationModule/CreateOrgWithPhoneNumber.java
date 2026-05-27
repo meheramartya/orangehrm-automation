@@ -33,7 +33,7 @@ public class CreateOrgWithPhoneNumber extends BaseClass {
 		
 //		Login to the application
 		LoginPomPage lpp = new LoginPomPage(driver);
-		lpp.Login();
+		lpp.Login(username, password);
 		
 		HomePomPage hpp = new HomePomPage(driver);
 		

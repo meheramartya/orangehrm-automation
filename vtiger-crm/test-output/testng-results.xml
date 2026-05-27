@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Suite Execution Started --- Adv Report Generation]]>
@@ -9,57 +9,6 @@
     </line>
     <line>
       <![CDATA[Parallel Execution Configured]]>
-    </line>
-    <line>
-      <![CDATA[Parallel Execution Configured]]>
-    </line>
-    <line>
-      <![CDATA[Launching Browser]]>
-    </line>
-    <line>
-      <![CDATA[Launching Browser]]>
-    </line>
-    <line>
-      <![CDATA[sdriver initialized: SUCCESS]]>
-    </line>
-    <line>
-      <![CDATA[Browser Launched Successfully]]>
-    </line>
-    <line>
-      <![CDATA[sdriver initialized: SUCCESS]]>
-    </line>
-    <line>
-      <![CDATA[Browser Launched Successfully]]>
-    </line>
-    <line>
-      <![CDATA[Logged into Application]]>
-    </line>
-    <line>
-      <![CDATA[Logged into Application]]>
-    </line>
-    <line>
-      <![CDATA[createBasicContactTest : Test Execution Failed]]>
-    </line>
-    <line>
-      <![CDATA[Closed Parallel Execution Config]]>
-    </line>
-    <line>
-      <![CDATA[Logged out from Application]]>
-    </line>
-    <line>
-      <![CDATA[Logged into Application]]>
-    </line>
-    <line>
-      <![CDATA[Logged out from Application]]>
-    </line>
-    <line>
-      <![CDATA[Logged into Application]]>
-    </line>
-    <line>
-      <![CDATA[Logged out from Application]]>
-    </line>
-    <line>
-      <![CDATA[Browser Closed]]>
     </line>
     <line>
       <![CDATA[Launching Browser]]>
@@ -98,143 +47,37 @@
       <![CDATA[Database Disconnected]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-05-11T18:25:19 IST" name="Cross Browser Testing Suite" finished-at="2026-05-11T18:28:25 IST" duration-ms="186453">
+  <suite started-at="2026-05-13T16:58:01 IST" name="Default suite" finished-at="2026-05-13T16:59:11 IST" duration-ms="70627">
     <groups>
       <group name="regression">
-        <method signature="ContactModule.createContactWithOrganizationTest(java.util.Map)[pri:0, instance:contactModule.ContactModule@2925bf5b]" name="createContactWithOrganizationTest" class="contactModule.ContactModule"/>
-        <method signature="ContactModule.createContactWithSupportDatesTest(java.util.Map)[pri:0, instance:contactModule.ContactModule@2925bf5b]" name="createContactWithSupportDatesTest" class="contactModule.ContactModule"/>
-        <method signature="OrganizationModule.createOrgWithIndustryAndTypeTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModule@510f3d34]" name="createOrgWithIndustryAndTypeTest" class="organizationModule.OrganizationModule"/>
-        <method signature="OrganizationModule.createOrgWithPhoneTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModule@510f3d34]" name="createOrgWithPhoneTest" class="organizationModule.OrganizationModule"/>
-        <method signature="ContactModule.createContactWithOrganizationTest(java.util.Map)[pri:0, instance:contactModule.ContactModule@e4487af]" name="createContactWithOrganizationTest" class="contactModule.ContactModule"/>
-        <method signature="ContactModule.createContactWithSupportDatesTest(java.util.Map)[pri:0, instance:contactModule.ContactModule@e4487af]" name="createContactWithSupportDatesTest" class="contactModule.ContactModule"/>
-        <method signature="OrganizationModule.createOrgWithIndustryAndTypeTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModule@6aaceffd]" name="createOrgWithIndustryAndTypeTest" class="organizationModule.OrganizationModule"/>
-        <method signature="OrganizationModule.createOrgWithPhoneTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModule@6aaceffd]" name="createOrgWithPhoneTest" class="organizationModule.OrganizationModule"/>
+        <method signature="OrganizationModule.createOrgWithIndustryAndTypeTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" name="createOrgWithIndustryAndTypeTest" class="organizationModule.OrganizationModule"/>
+        <method signature="OrganizationModule.createOrgWithPhoneTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" name="createOrgWithPhoneTest" class="organizationModule.OrganizationModule"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="ContactModule.createBasicContactTest(java.util.Map)[pri:0, instance:contactModule.ContactModule@2925bf5b]" name="createBasicContactTest" class="contactModule.ContactModule"/>
-        <method signature="OrganizationModule.createOrgTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModule@510f3d34]" name="createOrgTest" class="organizationModule.OrganizationModule"/>
-        <method signature="ContactModule.createBasicContactTest(java.util.Map)[pri:0, instance:contactModule.ContactModule@e4487af]" name="createBasicContactTest" class="contactModule.ContactModule"/>
-        <method signature="OrganizationModule.createOrgTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModule@6aaceffd]" name="createOrgTest" class="organizationModule.OrganizationModule"/>
+        <method signature="OrganizationModule.createOrgTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" name="createOrgTest" class="organizationModule.OrganizationModule"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-05-11T18:25:19 IST" name="Chrome Tests" finished-at="2026-05-11T18:28:25 IST" duration-ms="186453">
+    <test started-at="2026-05-13T16:58:01 IST" name="Default test" finished-at="2026-05-13T16:59:11 IST" duration-ms="70627">
       <class name="organizationModule.OrganizationModule">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:organizationModule.OrganizationModule@510f3d34]" started-at="2026-05-11T18:27:26 IST" name="setUp" finished-at="2026-05-11T18:27:28 IST" duration-ms="2297" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="connectToDatabase()[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" started-at="2026-05-13T16:57:59 IST" name="connectToDatabase" finished-at="2026-05-13T16:58:01 IST" duration-ms="1108" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Launching Browser]]>
-            </line>
-            <line>
-              <![CDATA[sdriver initialized: SUCCESS]]>
-            </line>
-            <line>
-              <![CDATA[Browser Launched Successfully]]>
+              <![CDATA[Database Connected]]>
             </line>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="login()[pri:0, instance:organizationModule.OrganizationModule@510f3d34]" started-at="2026-05-11T18:27:28 IST" name="login" finished-at="2026-05-11T18:27:32 IST" duration-ms="3450" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Logged into Application]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createOrgTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModule@510f3d34]" started-at="2026-05-11T18:27:32 IST" name="createOrgTest" description="Create Org" data-provider="organizationDataProvider" finished-at="2026-05-11T18:27:45 IST" duration-ms="13187" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{STATUS=, TC_ID=TC_01, INDUSTRY=Pass, Pass=Pass, SNO=1.0, ORG_NAME=Marvel, TC_DESC=Create Org, PHNO=, TYPE=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrgTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:organizationModule.OrganizationModule@510f3d34]" started-at="2026-05-11T18:27:45 IST" name="logout" finished-at="2026-05-11T18:27:47 IST" duration-ms="2531" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Logged out from Application]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:organizationModule.OrganizationModule@510f3d34]" started-at="2026-05-11T18:27:47 IST" name="login" finished-at="2026-05-11T18:27:50 IST" duration-ms="2944" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Logged into Application]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createOrgWithIndustryAndTypeTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModule@510f3d34]" started-at="2026-05-11T18:27:50 IST" name="createOrgWithIndustryAndTypeTest" description="Create Org With Industry and Type" data-provider="organizationDataProvider" finished-at="2026-05-11T18:28:03 IST" duration-ms="12796" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{STATUS=Pass, TC_ID=TC_02, INDUSTRY=Construction, Pass=, SNO=2.0, ORG_NAME=Hello, TC_DESC=Create Org With Industry and Type, PHNO=, TYPE=Competitor}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrgWithIndustryAndTypeTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:organizationModule.OrganizationModule@510f3d34]" started-at="2026-05-11T18:28:03 IST" name="logout" finished-at="2026-05-11T18:28:05 IST" duration-ms="2407" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Logged out from Application]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:organizationModule.OrganizationModule@510f3d34]" started-at="2026-05-11T18:28:06 IST" name="login" finished-at="2026-05-11T18:28:08 IST" duration-ms="2624" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Logged into Application]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createOrgWithPhoneTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModule@510f3d34]" started-at="2026-05-11T18:28:08 IST" name="createOrgWithPhoneTest" description="Create Org With Phone no" data-provider="organizationDataProvider" finished-at="2026-05-11T18:28:23 IST" duration-ms="14427" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{STATUS=Pass, TC_ID=TC_03, INDUSTRY=, Pass=, SNO=3.0, ORG_NAME=Byy, TC_DESC=Create Org With Phone no, PHNO=2.783383839E9, TYPE=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrgWithPhoneTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:organizationModule.OrganizationModule@510f3d34]" started-at="2026-05-11T18:28:23 IST" name="logout" finished-at="2026-05-11T18:28:25 IST" duration-ms="2486" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Logged out from Application]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:organizationModule.OrganizationModule@510f3d34]" started-at="2026-05-11T18:28:25 IST" name="quitBrowser" finished-at="2026-05-11T18:28:25 IST" duration-ms="228" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Browser Closed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- organizationModule.OrganizationModule -->
-      <class name="contactModule.ContactModule">
-        <test-method is-config="true" signature="configParallelExe()[pri:0, instance:contactModule.ContactModule@2925bf5b]" started-at="2026-05-11T18:25:19 IST" name="configParallelExe" finished-at="2026-05-11T18:25:19 IST" duration-ms="6" status="PASS">
+        </test-method> <!-- connectToDatabase -->
+        <test-method is-config="true" signature="configParallelExe()[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" started-at="2026-05-13T16:58:01 IST" name="configParallelExe" finished-at="2026-05-13T16:58:01 IST" duration-ms="6" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Parallel Execution Configured]]>
             </line>
           </reporter-output>
         </test-method> <!-- configParallelExe -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:contactModule.ContactModule@2925bf5b]" started-at="2026-05-11T18:25:19 IST" name="setUp" finished-at="2026-05-11T18:25:37 IST" duration-ms="18045" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" started-at="2026-05-13T16:58:01 IST" name="setUp" finished-at="2026-05-13T16:58:10 IST" duration-ms="9792" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[]]>
               </value>
             </param>
           </params>
@@ -250,96 +93,103 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="login()[pri:0, instance:contactModule.ContactModule@2925bf5b]" started-at="2026-05-11T18:25:39 IST" name="login" finished-at="2026-05-11T18:26:00 IST" duration-ms="21902" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" started-at="2026-05-13T16:58:12 IST" name="login" finished-at="2026-05-13T16:58:15 IST" duration-ms="3617" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged into Application]]>
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createBasicContactTest(java.util.Map)[pri:0, instance:contactModule.ContactModule@2925bf5b]" started-at="2026-05-11T18:26:00 IST" name="createBasicContactTest" description="Create Contact" data-provider="contactDataProvider" finished-at="2026-05-11T18:26:40 IST" duration-ms="40050" status="PASS">
+        <test-method signature="createOrgTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" started-at="2026-05-13T16:58:15 IST" name="createOrgTest" description="Create Org" data-provider="organizationDataProvider" finished-at="2026-05-13T16:58:31 IST" duration-ms="15707" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{CONTACT_NAME=Tom, SUPPORT_END_DATE=, STATUS=Pass, TC_ID=TC_01, ORG_NAME=, SUPPORT_START_DATE=, TC_DESC=Create Contact, SLNO=1.0}]]>
+                <![CDATA[{STATUS=, TC_ID=TC_01, INDUSTRY=, SNO=1.0, ORG_NAME=Marvel, TC_DESC=Create Org, PHNO=, TYPE=}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createBasicContactTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:contactModule.ContactModule@2925bf5b]" started-at="2026-05-11T18:26:40 IST" name="logout" finished-at="2026-05-11T18:26:44 IST" duration-ms="3402" status="PASS">
+        </test-method> <!-- createOrgTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" started-at="2026-05-13T16:58:31 IST" name="logout" finished-at="2026-05-13T16:58:34 IST" duration-ms="2965" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged out from Application]]>
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:contactModule.ContactModule@2925bf5b]" started-at="2026-05-11T18:26:44 IST" name="login" finished-at="2026-05-11T18:26:47 IST" duration-ms="3150" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" started-at="2026-05-13T16:58:34 IST" name="login" finished-at="2026-05-13T16:58:38 IST" duration-ms="3515" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged into Application]]>
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createContactWithOrganizationTest(java.util.Map)[pri:0, instance:contactModule.ContactModule@2925bf5b]" started-at="2026-05-11T18:26:47 IST" name="createContactWithOrganizationTest" description="Create Contact With Organization" data-provider="contactDataProvider" finished-at="2026-05-11T18:27:03 IST" duration-ms="15791" status="PASS">
+        <test-method signature="createOrgWithIndustryAndTypeTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" started-at="2026-05-13T16:58:38 IST" name="createOrgWithIndustryAndTypeTest" description="Create Org With Industry and Type" data-provider="organizationDataProvider" finished-at="2026-05-13T16:58:51 IST" duration-ms="12771" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{CONTACT_NAME=Ram, SUPPORT_END_DATE=, STATUS=Pass, TC_ID=TC_02, ORG_NAME=Marvel35, SUPPORT_START_DATE=, TC_DESC=Create Contact With Organization, SLNO=2.0}]]>
+                <![CDATA[{STATUS=, TC_ID=TC_02, INDUSTRY=Construction, SNO=2.0, ORG_NAME=Hello, TC_DESC=Create Org With Industry and Type, PHNO=, TYPE=Analyst}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createContactWithOrganizationTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:contactModule.ContactModule@2925bf5b]" started-at="2026-05-11T18:27:03 IST" name="logout" finished-at="2026-05-11T18:27:05 IST" duration-ms="2321" status="PASS">
+        </test-method> <!-- createOrgWithIndustryAndTypeTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" started-at="2026-05-13T16:58:51 IST" name="logout" finished-at="2026-05-13T16:58:53 IST" duration-ms="2400" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged out from Application]]>
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:contactModule.ContactModule@2925bf5b]" started-at="2026-05-11T18:27:05 IST" name="login" finished-at="2026-05-11T18:27:08 IST" duration-ms="2648" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" started-at="2026-05-13T16:58:53 IST" name="login" finished-at="2026-05-13T16:58:56 IST" duration-ms="2788" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged into Application]]>
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createContactWithSupportDatesTest(java.util.Map)[pri:0, instance:contactModule.ContactModule@2925bf5b]" started-at="2026-05-11T18:27:08 IST" name="createContactWithSupportDatesTest" description="Create Contact With Support Dates" data-provider="contactDataProvider" finished-at="2026-05-11T18:27:23 IST" duration-ms="14789" status="PASS">
+        <test-method signature="createOrgWithPhoneTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" started-at="2026-05-13T16:58:56 IST" name="createOrgWithPhoneTest" description="Create Org With Phone no" data-provider="organizationDataProvider" finished-at="2026-05-13T16:59:08 IST" duration-ms="12435" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{CONTACT_NAME=Amar, SUPPORT_END_DATE=2026-05-31, STATUS=Pass, TC_ID=TC_03, ORG_NAME=Hello497, SUPPORT_START_DATE=2026-04-28, TC_DESC=Create Contact With Support Dates, SLNO=3.0}]]>
+                <![CDATA[{STATUS=, TC_ID=TC_03, INDUSTRY=, SNO=3.0, ORG_NAME=Byy, TC_DESC=Create Org With Phone no, PHNO=9.348625285E9, TYPE=}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createContactWithSupportDatesTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:contactModule.ContactModule@2925bf5b]" started-at="2026-05-11T18:27:23 IST" name="logout" finished-at="2026-05-11T18:27:25 IST" duration-ms="2458" status="PASS">
+        </test-method> <!-- createOrgWithPhoneTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" started-at="2026-05-13T16:59:08 IST" name="logout" finished-at="2026-05-13T16:59:11 IST" duration-ms="2404" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged out from Application]]>
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:contactModule.ContactModule@2925bf5b]" started-at="2026-05-11T18:27:25 IST" name="quitBrowser" finished-at="2026-05-11T18:27:26 IST" duration-ms="315" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" started-at="2026-05-13T16:59:11 IST" name="quitBrowser" finished-at="2026-05-13T16:59:11 IST" duration-ms="359" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser Closed]]>
             </line>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="closeConfigPE()[pri:0, instance:contactModule.ContactModule@2925bf5b]" started-at="2026-05-11T18:28:25 IST" name="closeConfigPE" finished-at="2026-05-11T18:28:25 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeConfigPE()[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" started-at="2026-05-13T16:59:11 IST" name="closeConfigPE" finished-at="2026-05-13T16:59:11 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closed Parallel Execution Config]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeConfigPE -->
-      </class> <!-- contactModule.ContactModule -->
-    </test> <!-- Chrome Tests -->
-  </suite> <!-- Cross Browser Testing Suite -->
+        <test-method is-config="true" signature="disconnectDB()[pri:0, instance:organizationModule.OrganizationModule@24aed80c]" started-at="2026-05-13T16:59:11 IST" name="disconnectDB" finished-at="2026-05-13T16:59:11 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Database Disconnected]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- disconnectDB -->
+      </class> <!-- organizationModule.OrganizationModule -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

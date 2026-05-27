@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-27T19:53:00 IST" name="Suite" finished-at="2026-05-27T19:53:18 IST" duration-ms="17706">
+    <groups>
+    </groups>
+    <test started-at="2026-05-27T19:53:00 IST" name="Test" finished-at="2026-05-27T19:53:18 IST" duration-ms="17706">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@b78a709]" started-at="2026-05-27T19:53:00 IST" name="setup" finished-at="2026-05-27T19:53:12 IST" duration-ms="11366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@b78a709]" started-at="2026-05-27T19:53:14 IST" name="loginTest" data-provider="loginData" finished-at="2026-05-27T19:53:17 IST" duration-ms="3267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@b78a709]" started-at="2026-05-27T19:53:17 IST" name="tearDown" finished-at="2026-05-27T19:53:18 IST" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

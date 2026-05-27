@@ -49,8 +49,16 @@ public class TestListener implements ITestListener, ISuiteListener {
 
     @Override
     public void onFinish(ISuite suite) {
-        test.log(Status.INFO, "Suite Execution finished - Report Backup");
-        report.flush();
+        // ✅ FIXED: Check if test is not null before logging
+        if (test != null) {
+            test.log(Status.INFO, "Suite Execution finished - Report Backup");
+        }
+        
+        // ✅ Also log suite info directly to report
+        if (report != null) {
+            report.setSystemInfo("Suite Finish Time", new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
+            report.flush();
+        }
     }
 
     @Override
@@ -73,7 +81,9 @@ public class TestListener implements ITestListener, ISuiteListener {
         
         // Get test from ThreadLocal
         ExtentTest currentTest = UtilityObjectClass.getTest();
-        currentTest.log(Status.PASS, testName + " : Test Execution Success");
+        if (currentTest != null) {
+            currentTest.log(Status.PASS, testName + " : Test Execution Success");
+        }
     }
 
     @Override
@@ -85,6 +95,12 @@ public class TestListener implements ITestListener, ISuiteListener {
         
         // Get test from ThreadLocal
         ExtentTest currentTest = UtilityObjectClass.getTest();
+        
+        if (currentTest == null) {
+            Reporter.log("Test is null, cannot log failure", true);
+            return;
+        }
+        
         currentTest.log(Status.FAIL, testName + " : Test Execution Failed");
         
         // Log the exception
@@ -129,6 +145,8 @@ public class TestListener implements ITestListener, ISuiteListener {
         
         // Get test from ThreadLocal
         ExtentTest currentTest = UtilityObjectClass.getTest();
-        currentTest.log(Status.SKIP, testName + " : Test Skipped");
+        if (currentTest != null) {
+            currentTest.log(Status.SKIP, testName + " : Test Skipped");
+        }
     }
 }
