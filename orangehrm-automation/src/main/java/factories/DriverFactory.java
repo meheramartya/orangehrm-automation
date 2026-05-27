@@ -42,6 +42,7 @@ public class DriverFactory {
 
 		        options.addArguments(
 		                "--no-sandbox");
+		        options.addArguments("--headless=new");
 
 		        options.addArguments(
 		                "--disable-dev-shm-usage");
