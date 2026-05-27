@@ -1,6 +1,6 @@
 package reports;
 
-import java.awt.Desktop;
+//import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
@@ -50,17 +50,17 @@ public final class ExtentManager {
 
             extent.flush();
 
-            try {
-
-                Desktop.getDesktop().browse(
-                        new File(
-                                FrameworkConstants.REPORT_PATH)
-                                .toURI());
-
-            } catch(IOException e) {
-
-                e.printStackTrace();
-            }
+//            try {
+//
+//                Desktop.getDesktop().browse(
+//                        new File(
+//                                FrameworkConstants.REPORT_PATH)
+//                                .toURI());
+//
+//            } catch(IOException e) {
+//
+//                e.printStackTrace();
+//            }
         }
     }
 }
