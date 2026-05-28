@@ -1,0 +1,55 @@
+```groovy
+pipeline {
+
+    agent any
+
+    tools {
+
+        maven 'Maven'
+        jdk 'JDK17'
+    }
+
+    stages {
+
+        stage('Checkout') {
+
+            steps {
+
+                git 'https://github.com/meheramartya/orangehrm-automation.git'
+            }
+        }
+
+        stage('Build and Test') {
+
+            steps {
+
+                dir('orangehrm-automation') {
+
+                    bat 'mvn clean test'
+                }
+            }
+        }
+    }
+
+    post {
+
+        always {
+
+            publishHTML(target: [
+
+                reportDir: 'orangehrm-automation/reports',
+
+                reportFiles: 'index.html',
+
+                reportName: 'OrangeHRM Extent Report',
+
+                keepAll: true,
+
+                alwaysLinkToLastBuild: true,
+
+                allowMissing: false
+            ])
+        }
+    }
+}
+```
