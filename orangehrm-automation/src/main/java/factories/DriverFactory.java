@@ -3,6 +3,8 @@ package factories;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -17,19 +19,21 @@ public class DriverFactory {
 	
 	public static WebDriver initializeBrowser(BrowserType browser) {
 	
-	WebDriver driver;
+	WebDriver driver = null;
 	
+	 String executionMode =
+	            PropertyUtility.getProperty(
+	                    "executionMode");
+
 	switch(browser) {
 //		case CHROME:
 //		
 //			driver = new ChromeDriver();
 //			break;
+		 
 		case CHROME:
 
-		    String executionMode =
-		            PropertyUtility.getProperty(
-		                    "executionMode");
-
+		  
 		    if(executionMode.equalsIgnoreCase(
 		            "local")) {
 
@@ -74,14 +78,38 @@ public class DriverFactory {
 		    break;
 		    
 		case EDGE:
-			
-			driver = new EdgeDriver();
-			break;
-			
-		default:
 
-            throw new IllegalArgumentException(
-                    "Invalid Browser Type");
+		    if(executionMode.equalsIgnoreCase(
+		            "local")) {
+
+		        driver = new EdgeDriver();
+
+		    } else {
+
+		        EdgeOptions options =
+		                new EdgeOptions();
+
+		        options.addArguments("--headless=new");
+
+		        try {
+
+		            driver =
+		                    new RemoteWebDriver(
+
+		                            new URL(
+		                                    PropertyUtility
+		                                            .getProperty(
+		                                                    "gridUrl")),
+
+		                            options);
+
+		        } catch(MalformedURLException e) {
+
+		            throw new RuntimeException(e);
+		        }
+		    }
+
+		    break;
         }
 	return driver;
 			

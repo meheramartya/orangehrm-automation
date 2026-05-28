@@ -111,7 +111,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>
-                            testng.xml
+                            crossbrowser.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>

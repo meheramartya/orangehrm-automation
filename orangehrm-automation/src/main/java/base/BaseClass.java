@@ -10,6 +10,7 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 import enums.BrowserType;
 import factories.DriverFactory;
@@ -21,11 +22,10 @@ public class BaseClass {
             LogManager.getLogger(this.getClass());
 
     @BeforeClass
-    public void setup() {
+    @Parameters("browser")
+    public void setup(String browser) {
 
-        String browser =
-                PropertyUtility.getProperty("browser");
-
+       
         WebDriver driver =
                 DriverFactory.initializeBrowser(
                         BrowserType.valueOf(
