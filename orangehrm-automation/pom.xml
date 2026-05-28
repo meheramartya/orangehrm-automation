@@ -111,7 +111,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>
-                            simple.xml
+                            testng.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
